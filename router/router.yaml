@@ -60,9 +60,9 @@ coprocessor:
 ## This stops abuse, but I feel like breaks the flexibility of GQL, will have to dig deeper
 preview_persisted_queries:
   enabled: true
-  safelist: 
-    enabled: true
-    require_id: false
+  # safelist: 
+  #   enabled: true
+  #   require_id: false
 apq:
   enabled: false
 

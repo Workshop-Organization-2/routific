@@ -47,4 +47,13 @@ authorization:
   require_authentication: false
   preview_directives: 
     enabled: true
+## Seperatly deployed coprocess that we will use to scrub data from our graphql response. In this example, customer credit cards, but we could use this for 
+## scrubbing data based on org settings or requirements.
+coprocessor:
+  url: https://coprocessor-wn3vwa6nlq-ue.a.run.app 
+  timeout: 2s 
+  router:
+    response:
+      body: true
+
 

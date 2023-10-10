@@ -56,4 +56,14 @@ coprocessor:
     response:
       body: true
 
+## We are going to persite and safelist queries so people and only use queries that we say are ok to run.
+## This stops abuse, but I feel like breaks the flexibility of GQL, will have to dig deeper
+preview_persisted_queries:
+  enabled: true
+  safelist: 
+    enabled: true
+    require_id: false
+apq:
+  enabled: false
+
 
